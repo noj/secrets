@@ -11,7 +11,7 @@ import (
 
 const redacted = "**REDACTED**"
 
-// Boxed string that requires explicit unboxing through GetSecret for access,
+// Boxed string that requires explicit unboxing through ExposeSecret for access,
 // this is to avoid accidental logging of a secret value. It also makes it
 // easier to audit for secrets usage in the code base.
 type Secret struct {
